@@ -48,10 +48,11 @@ def find_letter_frequency(text):
 def substitute_single_letters(text, single_letters):
     letter_frequency = find_letter_frequency(text)
     substitution = {}
+    letter_frequency_keys = list(letter_frequency.keys())
+    single_letters_keys = list(single_letters.keys())
+
     #merge only matching freq
-    print(letter_frequency)
-    print(single_letters)
-    for a, b in zip(letter_frequency.keys(), single_letters.keys()):
+    for a, b in zip(letter_frequency_keys[:5], single_letters_keys[:5]):
         substitution[a] = b
 
     print(substitution)
@@ -60,10 +61,14 @@ def substitute_single_letters(text, single_letters):
     for i, letter in enumerate(text):
         if letter in substitution.keys():
             transformed_text[i] = substitution[letter].lower()
+        else:
+            transformed_text[i] = letter
 
     return "".join(transformed_text)
 
 
+# TODO spoj digrams
+# def substitute_digrams(text, digrams):
 
 
 
