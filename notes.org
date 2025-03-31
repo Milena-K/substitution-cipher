@@ -1,0 +1,100 @@
+#+title: Notes
+
+# Prvo gi pishuvam od plavata df2 lokalna frekfencija za da znam so koi od df1 da gi zamenam.
+
+* single letters
+- Najchesto pojavuvana bukva e bukvata H sto mi pokazhuva deka toa e najverojatno A.
+- Bukvata O mozhe da e ili Kj ili P.
+- I i E se dosta slichni vo frekfencija na pojavuvanje, zatoa ke stavam Lj da e bukvata e.
+
+- Dosta slichni se vo pojava:
+  - H === A
+  - Kj, P, D === O, I, E
+  - Lj, Gj === T, N
+  - Ch, U === R, S
+  - I, Zh, S, C === V, D, K
+  - T, E === L, P
+  - E, L, J, N === M, U, Z
+
+# Najmalce se pojavuvaat A, e', f, O, moze da gi zamenam so Gj, Dzh, Lj i Dz
+
+* bigrams
+- ЃХ - НА
+
+** Results
+- H === A
+# mozhe da se smenat LJ i GJ
+- Lj === T
+- Gj === N
+# ###########
+- Ch === R
+- U === S
+- Kj === O
+- P === I
+- D === E
+- T === P
+- I === V
+- Zh, S, C === D, K
+- E === L, P, M, U, Z
+- E, L, J, N === M, U, Z
+
+
+** Parovi shto ja sodrzhat bukvata A od originalniot set
+- NA
+- AT TA
+- RA
+- VA
+- KA
+- ZA
+- DA
+- JA
+
+** Parovi shto ja sodrzhat bukvata A od lokalniot set
+- ЃХ ХЃ (НA АН) (ТА АТ)
+- ХЉ ЉХ (ТА АТ) (НA АН)
+- ЧХ    (РA)
+- ХИ ИХ (ВА АВ)
+- ЖХ ХЖ (AД ДA) (KA AK)
+- ХУ    (AC)
+- СХ    (KA, ДA)
+- ТХ ХТ (ПA, AП)
+
+* trigrams
+- H === A
+- Lj === T
+# somnitelno Gj
+- Gj === N
+# ###########
+- Ch === R
+- U === S
+- Kj === O
+- P === I
+- D === E
+- T === P
+- I === V (D, K)
+- S mozno e da e V
+- Zh, S, C === D, K
+- E === L, P, M, U, Z
+- J mozhno e da e U
+- E, L, N === M, Z
+
+# ######## idam niz trigrams i gi preveduvam
+- P LJ D === ITE
+- JSH === UVA (J mozhno e da e U)(S mozno e da e V)
+- LJ H P === TAI
+- H LJ P === ATI
+- H CH H === ARA
+
+
+* final touches
+- C === L (nope)
+- Dz === Kj
+
+# 100% tochni bukvi
+- U === S
+- D === E
+- Ch === R
+- Zh === D
+- H === A
+- Kj === O
+- Lj === T
