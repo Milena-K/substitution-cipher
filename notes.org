@@ -89,6 +89,7 @@
 * final touches
 - C === L (nope)
 - Dz === Kj
+- E === G
 
 # 100% tochni bukvi
 - U === S
