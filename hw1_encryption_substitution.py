@@ -18,12 +18,11 @@ if __name__ == "__main__":
     text = "alice.txt"
     alphabet = ['А', 'Б', 'В', 'Г', 'Д', 'Ѓ', 'Е', 'Ж', 'З', 'Ѕ', 'И', 'Ј', 'К', 'Л', 'Љ', 'М', 'Н', 'Њ', 'О', 'П', 'Р', 'С', 'Т', 'Ќ', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Џ', 'Ш']
 
-    clean_text = ""
     alice_file = open(text, "r")
     content = alice_file.read().upper()
     alice_file.close()
 
-    clean_text = clean_text.join([ a for a in content if a in alphabet ])
+    clean_text = "".join([ a for a in content if a in alphabet ])
     substitution = random.sample(list(range(0,31)), 31)
     encryption_key = {}
     for i in range(0,31):
@@ -31,5 +30,5 @@ if __name__ == "__main__":
 
     encrypt_text(clean_text, encryption_key)
 
-    # test
+    ## test
     # encrypt_text("МИЛЕНА", encryption_key)
